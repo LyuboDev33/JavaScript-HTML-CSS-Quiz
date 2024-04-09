@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css  ">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Изпит</title>
+</head>
+
+<body>
+
+  <div class="backgroundContainer">
+
+    <form id="postForm" method="POST">
+
+      <h1>HTML част</h1>
+
+      <div class="question">
+        <label>1. HTML е програмен език ? </label><br>
+
+        <input required name="firstQuestion" value="Вярно" type="radio">A) Грешно<br>
+        <input required name="firstQuestion" value="Грешно" type="radio">B) Вярно
+        <p class="parag">Правилен отговор: A) Грешно</p>
+
+      </div>
+
+      <br>
+
+      <div class="question">
+
+        <div>
+          <label>2. Кое е вярното съкращение на HTML?</label><br>
+          <input required name="secondQuestion" value="Грешно" type="radio">A) Home Tool Markup Language<br>
+          <input required name="secondQuestion" value="Вярно" type="radio">B) Hyper Text Markup Language <br>
+          <input required name="secondQuestion" value="Грешно" type="radio">C) Hyperlinks and Markup Languge
+          <p class="parag">Правилен отговор: B) Hyper Text Markup Language </p>
+        </div>
+
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>3. Колко на брой са header таговете в HTML?</label><br>
+
+        <input required name="thirdQuestion" value="Грешно" type="radio">A) 3<br>
+        <input required name="thirdQuestion" value="Грешно" type="radio">B) 4<br>
+        <input required name="thirdQuestion" value="Грешно" type="radio">C) 5<br>
+        <input required name="thirdQuestion" value="Вярно" type="radio">D) 6
+
+        <p class="parag">Правилен отговор: D) 6</p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>4. Каква е правилна структура на един HTML елемен?</label><br>
+
+        <input required name="fourthQuestion" value="Вярно" type="radio"><span data-text="true">A)
+          &lt;HTML&gt;&lt;HEAD&gt;&lt;/HEAD&gt;&lt;BODY&gt;&lt;/BODY&gt;&lt;/HTML&gt;</span>
+        <br>
+        <input required name="fourthQuestion" value="Грешно" type="radio"><span data-text="true">B)
+          &lt;HTML&gt;&lt;HEAD&gt;&lt;BODY&gt;&lt;BODY&gt;&lt;HEAD&gt;&lt;/HTML&gt;</span><br>
+        <input required name="fourthQuestion" value="Грешно" type="radio"><span data-text="true">C)
+          &lt;HTML&gt;&lt;HEAD&gt;&lt;HEAD&gt;&lt;/HTML&gt;&lt;/BODY&gt;&lt;/BODY&gt;</span><br>
+
+        <p class="parag">Правилен отговор: <span data-text="true">A)
+            &lt;HTML&gt;&lt;HEAD&gt;&lt;/HEAD&gt;&lt;BODY&gt;&lt;/BODY&gt;&lt;/HTML&gt;</span></p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>5. Какво е семантичен HTML?</label><br>
+
+        <input required name="fifthQ" value="Грешно" type="radio">A) Нова обновена версия на HTML
+        <br>
+        <input required name="fifthQ" value="Вярно" type="radio">B) Определен начин по който програмистите пишат HTML
+        код
+        <br>
+        <input required name="fifthQ" value="Грешно" type="radio">C) Библиотека с която пишем HTML код по-лесно
+
+        <p class="parag">Правилен отговор: B) Определен начин по който програмистите пишат HTML код</p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>6. Кой елемент се използва за прикачване на снимка в HTML?</label><br>
+
+        <input required name="sixthQ" value="Грешно" type="radio">A) &lt;input type='file'&gt;
+        <br>
+        <input required name="sixthQ" value="Грешно" type="radio"> B) &lt;image&gt;
+        <br>
+        <input required name="sixthQ" value="Вярно" type="radio">C) &lt;img&gt;
+
+        <p class="parag">C) Правилен отговор: &lt;img&gt; </p>
+      </div>
+
+
+      <br>
+
+      <div class="question">
+        <label>7. Как се създава номериран списък?</label><br>
+
+        <input required name="seventhQ" value="Вярно" type="radio">A) &lt;ol&gt; &lt;/ol&gt;
+        <br>
+        <input required name="seventhQ" value="Грешно" type="radio">B) &lt;ul&gt; &lt;/ul&gt;
+        <br>
+
+        <p class="parag">Правилен отговор: A) &lt;ol&gt; &lt;/ol&gt; </p>
+      </div>
+
+
+      <br>
+      <div class="question">
+        <label>8. Как се създава неномериран списък?</label><br>
+
+        <input required name="eightQ" value="Грешно" type="radio">A) &lt;ol&gt; &lt;/ol&gt;
+        <br>
+        <input required name="eightQ" value="Вярно" type="radio">B) &lt;ul&gt; &lt;/ul&gt;
+        <br>
+
+        <p class="parag">Правилен отговор: B) &lt;ul&gt; &lt;/ul&gt; </p>
+      </div>
+
+
+      <br>
+      <div class="question">
+        <label>9. На кой от редовете всички елементи са inline?</label><br>
+
+        <input required name="nineQ" value="Грешно" type="radio">A) &lt;div&gt;, &lt;hr&gt;, &lt;b&gt;, &lt;nav&gt;
+        <br>
+        <input required name="nineQ" value="Грешно" type="radio">B) &lt;i&gt;, &lt;br&gt;, &lt;b&gt;, &lt;p&gt;
+        <br>
+
+        <input required name="nineQ" value="Вярно" type="radio">C) &lt;i&gt;, &lt;br&gt;, &lt;b&gt;, &lt;img&gt;
+        <br>
+        <input required name="nineQ" value="Грешно" type="radio">D) &lt;button&gt;, &lt;li&gt;, &lt;b&gt;, &lt;img&gt;
+        <br>
+
+        <p class="parag">Правилен отговор: C) &lt;i&gt;, &lt;br&gt;, &lt;b&gt;, &lt;img&gt;</p>
+      </div>
+
+      <br>
+      <div class="question">
+        <label>10. На кой от посочените редове е правилно създаден хиперлинк към Google в нов браузър?</label><br>
+
+        <input name="tenQ" value="Грешно" type="radio" required>A) &lt;link href="google.com">Избери ме! &lt;/link&gt;
+        <br>
+        <input name="tenQ" value="Грешно" type="radio" required>B) &lt;a href="google.com">Не, не, избери мен!&lt;/a&gt;
+        <br>
+
+        <input name="tenQ" value="Вярно" type="radio" required>C) &lt;a href="google.com" target="_blank">Кой е верният
+        отговор?&lt;/a&gt;
+        <br>
+
+        <p class="parag">Правилен отговор: C) &lt;a href="google.com" target="_blank">Кой е верният отговор?&lt;/a&gt;
+        </p>
+      </div>
+
+      <br>
+
+      <!-- CSS ЧАСТ -->
+      <hr>
+      <h1>CSS част</h1>
+
+      <div class="question">
+        <label>11. Кое е вярното съкращение на CSS?</label><br>
+
+        <input name="elevenQ" value="Грешно" type="radio" required>А) Cascade sheets style
+        <br>
+        <input name="elevenQ" value="Вярно" type="radio" required>B) Cascading style sheets
+        <br>
+
+        <input name="elevenQ" value="Грешно" type="radio" required>C) Color and style sheets
+
+        <br>
+
+        <p class="parag">Правилен отговор: B) Cascading style sheets</p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>12. CSS е програмен език?</label><br>
+
+        <input name="twelveQ" value="Грешно" type="radio" required>А) Вярно
+        <br>
+        <input name="twelveQ" value="Вярно" type="radio" required>B) Грешно
+
+        <br>
+
+        <p class="parag">Правилен отговор: B) Грешно </p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>13. Къде се слага &lt;link&gt; таг-а в HTML документ? </label><br>
+
+        <input name="thirteenQ" value="Вярно" type="radio" required>А) В &lt;head&gt;частта
+        <br>
+        <input name="thirteenQ" value="Грешно" type="radio" required>B) В &lt;body &gt; частта
+
+        <br>
+
+        <p class="parag">Правилен отговор: A) В &lt;head&gt;частта</p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>14. Какъв е синтаксисът на CSS селектора, който се използва за селектиране на HTML елемент по неговия
+          клас? </label><br>
+
+        <input name="fourTeenQ" value="Грешно" type="radio" required>А) #
+        <br>
+        <input name="fourTeenQ" value="Вярно" type="radio" required>B) &nbsp .
+        <br>
+        <input name="fourTeenQ" value="Грешно" type="radio" required>C) @
+        <br>
+        <input name="fourTeenQ" value="Грешно" type="radio" required>D) /
+
+
+        <br>
+
+        <p class="parag">Правилен отговор: B) &nbsp . </p>
+      </div>
+
+      <br>
+
+
+      <div class="question">
+        <label>15. Какъв е синтаксисът на CSS селектора, който се използва за селектиране на HTML елемент по id?
+        </label><br>
+
+        <input name="fifteenQ" value="Вярно" type="radio" required>А) #
+        <br>
+        <input name="fifteenQ" value="Грешно" type="radio" required>B) .
+        <br>
+        <input name="fifteenQ" value="Грешно" type="radio" required>C) @
+        <br>
+        <input name="fifteenQ" value="Грешно" type="radio" required>D) /
+
+        <br>
+
+        <p class="parag">Правилен отговор: А) # </p>
+      </div>
+
+      <br>
+
+
+      <div class="question">
+        <label>16. Каква е разликата между margin и padding в CSS? </label><br>
+
+        <input name="sixTeen" value="Грешно" type="radio" required>А) Margin е пространството извън границата на
+        елемента, докато padding е пространството вътре в границата на елемента.
+        <br>
+        <input name="sixTeen" value="Вярно" type="radio" required>B) Margin се използва за добавяне на разстояние между
+        елементи, докато padding се използва за добавяне на пространство в рамките на един елемент.
+        <br>
+        <input name="sixTeen" value="Грешно" type="radio" required>C) Margin се прилага за инлайн елементи, докато
+        padding се прилага за блокови елементи
+        <br>
+        <input name="sixTeen" value="Грешно" type="radio" required>D) Няма разлика между margin и padding.
+
+        <br>
+
+        <p class="parag">Правилен отговор: B) Margin се използва за добавяне на разстояние между елементи, докато
+          padding се използва за добавяне на пространство в рамките на един елемент. </p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>17. Кое свойство на CSS се използва за оцветяване на текст?</label><br>
+
+        <input name="sevenTeen" value="Грешно" type="radio" required>А) text-color
+        <br>
+        <input name="sevenTeen" value="Вярно" type="radio" required>B) color
+        <br>
+        <input name="sevenTeen" value="Грешно" type="radio" required>C) text-style
+        <br>
+
+        <p class="parag">Правилен отговор: B) color </p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>18. Какъв е синтаксисът за задаване на външна граница (border) на елемент в CSS? </label><br>
+
+        <input name="eighTeen" value="Вярно" type="radio" required>А) border: solid 1px black;
+        <br>
+        <input name="eighTeen" value="Грешно" type="radio" required>B) border-style: solid; border-width: 1px;
+        border-color: black;
+        <br>
+        <input name="eighTeen" value="Грешно" type="radio" required>C) border-style: solid 1px black;
+
+        <br>
+
+        <p class="parag">Правилен отговор: А) border: solid 1px black; </p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>19. Кое CSS свойство се използва за задаване на фоново изображение за елемент? </label><br>
+
+        <input name="nineTeen" value="Грешно" type="radio" required>А) background-url
+        <br>
+        <input name="nineTeen" value="Грешно" type="radio" required>B) image-url
+        <br>
+        <input name="nineTeen" value="Вярно" type="radio" required>C) background-image
+
+        <br>
+
+        <p class="parag">Правилен отговор: C) background-image </p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>20. Как можем да премахнем подчертаването на хипервръзки? Пример:
+          <a style="text-decoration: underline;" href="https://www.google.com/">Тескт с подчертване</a>
+        </label><br>
+
+        <input name="twenty" value="Грешно" type="radio" required>А) text-decoration: underline;
+        <br>
+        <input name="twenty" value="Вярно" type="radio" required>B) text-decoration: none;
+        <br>
+        <input name="twenty" value="Грешно" type="radio" required>C) text-decoration: solid;
+
+        <br>
+
+        <p class="parag">Правилен отговор: B) text-decoration: none;</p>
+      </div>
+
+      <br>
+
+      <!-- JavaScript част -->
+      <hr>
+      <h1>JavaScript част</h1>
+
+      <div class="question">
+        <label>21. Кой е правилния синтаксис за създаването на променлива?</label><br>
+
+        <input name="twentyOne" value="Грешно" type="radio" required>А) const varibable;
+        <br>
+        <input name="twentyOne" value="Грешно" type="radio" required>B) let variable;
+        <br>
+        <input name="twentyOne" value="Грешно" type="radio" required>C) var variable;
+        <br>
+        <input name="twentyOne" value="Вярно" type="radio" required>D) Всички отговори са верни
+
+        <br>
+
+        <p class="parag">Правилен отговор: D) Всички отговори са верни </p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>22. Кой е правилния синтаксис за създаване на функция в JavaScript?</label><br>
+
+        <input name="twentyTwo" value="Грешно" type="radio" required>А) let myFunc = function myFunc {};
+        <br>
+        <input name="twentyTwo" value="Вярно" type="radio" required>B) function myFunc () { };
+        <br>
+        <input name="twentyTwo" value="Грешно" type="radio" required>C) myFuc function() {}
+        <br>
+        <input name="twentyTwo" value="Грешно" type="radio" required>D) function myFunc = {};
+        <br>
+        <p class="parag">Правилен отговор: B) function myFunc () { }; </p>
+        <script>  </script>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>23. Какво ще изпише в конзолота следния код: <br><br>
+          let maxAge = 18; <br><br>
+          if (maxAge >= 18) { <br><br>
+          console.log('Имате право да си купите алкохол.'); } <br><br>
+          else { <br><br>
+          console.log('Нямате право да си купите алкохол.'); }</label><br>
+
+        <input name="twentyThree" value="Грешно" type="radio" required>А) Нямате право да си купите алкохол.
+        <br>
+        <input name="twentyThree" value="Вярно" type="radio" required>B) Имате право да си купите алкохол.
+        <br>
+        <input name="twentyThree" value="Грешно" type="radio" required>C) Няма да се изпише нищо в конзолата
+        <br>
+        <p class="parag">Правилен отговор: B) Имате право да си купите алкохол. </p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>24. Как се създава alert съобщение в браузъра ?</label><br>
+
+        <input name="twentyFour" value="Грешно" type="radio" required>А) alertBox("Hello World");
+        <br>
+        <input name="twentyFour" value="Грешно" type="radio" required>B) msgBox("Hello World");
+        <br>
+        <input name="twentyFour" value="Вярно" type="radio" required>C) alert("Hello World");
+        <br>
+        <input name="twentyFour" value="Грешно" type="radio" required>D) Всички отговори са грешни
+
+        <br>
+
+        <p class="parag">Правилен отговор: C) alert("Hello World"); </p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>25. Каква е разликата между &nbsp === &nbsp и &nbsp == &nbsp за сравнение на стойности в
+          JavaScript??</label><br>
+
+        <input name="twentiFIve" value="Вярно" type="radio" required>А) "===" сравнява и стойностите и типовете на
+        стойностите, докато "==" сравнява само стойностите.
+        <br>
+        <input name="twentiFIve" value="Грешно" type="radio" required>B) "===" сравнява типовете на стойностите, докато
+        == сравнява само стойностите.
+        <br>
+
+        <p class="parag">Правилен отговор: A) "===" сравнява и стойностите, и типовете на стойностите, докато "=="
+          сравнява само стойностите. </p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>26. Какво представлява DOM (Document Object Model) ?</label><br>
+
+        <input name="twentySix" value="Грешно" type="radio" required>А) DOM е технология за създаване на графични
+        изображения.
+        <br>
+        <input name="twentySix" value="Грешно" type="radio" required>B) DOM е стил за оформление на уеб страници.
+        <br>
+
+        <input name="twentySix" value="Вярно" type="radio" required>C) DOM е модел за представяне на HTML документи,
+        който позволява манипулиране на елементите с JavaScript.
+        <br>
+
+
+        <p class="parag">Правилен отговор: C)DOM е модел за представяне на HTML документи,
+          който позволява манипулиране на елементите с JavaScript. </p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>27. Какъв е правилния синтаксис за създаване на масив?</label><br>
+
+        <input name="twentySeven" value="Вярно" type="radio" required>А) let arr = [];
+        <br>
+        <input name="twentySeven" value="Грешно" type="radio" required>B) let arr = {};
+        <br>
+
+        <input name="twentySeven" value="Грешно" type="radio" required>B) array arr = []
+        <br>
+
+
+        <p class="parag">Правилен отговор: A) let arr = []; </p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>28. Какъв е правилния синтаксис за създаване на обект?</label><br>
+
+        <input name="twentyEight" value="Грешно" type="radio" required>А) let obj = new Object();
+        <br>
+        <input name="twentyEight" value="Вярно" type="radio" required>B) let obj = { key: 'value' };
+        <br>
+
+        <input name="twentyEight" value="Грешно" type="radio" required>C) let obj = [];
+        <br>
+
+        <input name="twentyEight" value="Грешно" type="radio" required>D) let obj = Object.create();
+        <br>
+
+
+        <p class="parag">Правилен отговор: B) let obj = { key: 'value' }; </p>
+      </div>
+
+
+      <br>
+
+      <div class="question">
+        <label>29. Какво е конкатенация в JavaScript?</label><br>
+
+        <input name="twentyNine" value="Вярно" type="radio" required>А) Конкатенацията в JavaScript е процесът на
+        съединяване на две или повече низови стойности.
+        <br>
+        <input name="twentyNine" value="Грешно" type="radio" required>B) Конкатенацията е процесът на събиране на числа.
+        <br>
+
+        <input name="twentyNine" value="Грешно" type="radio" required>D) Конкатенацията е операция, която се използва
+        само за съединяване на масиви.
+        <br>
+
+
+        <p class="parag">Правилен отговор: A) Конкатенацията в JavaScript е процесът на съединяване на две или повече
+          низови стойности.</p>
+      </div>
+
+      <br>
+
+      <div class="question">
+        <label>30. Какъв е правилният начин за извличане на дължината на масив в JavaScript ?</label><br>
+
+        <input name="thirty" value="Грешно" type="radio" required>А) array.length();
+        <br>
+        <input name="thirty" value="Грешно" type="radio" required>B) array.size()
+        <br>
+
+        <input name="thirty" value="Вярно" type="radio" required>C) array.length
+        <br>
+
+        <input name="thirty" value="Грешно" type="radio" required>C) array.length
+        <br>
+
+
+        <p class="parag">Правилен отговор: C) array.length </p>
+      </div>
+
+
+
+      <br><br>
+
+      <label for="names">Въведете име и фамилия: </label><br>
+      <input required id="names" class="inputs" type="text">
+
+      <br><br>
+
+      <label for="email">Въведете вашият имейл:</label><br>
+      <input required id="email" class="inputs" type="email">
+
+      <br>
+
+
+      <p style="color: red;" class="errorP"></p>
+
+      <button id="submitBtn">Предай теста</button>
+
+      <br>
+      <br>
+      <hr>
+
+
+      <p class="class">При нужда да намерите резултата си, <br> поставете в търсачката имейла с който сте направили
+        теста. <br>
+        Трябва ви помощ? <br> Обадете се на: <br><b>0894 938 614</b></p>
+
+
+    </form>
+
+    <div class="searchDiv">
+      <label class="searchMail" for="searchMail">Търси по имейл адрес:</label>
+
+      <form method="post" class="search-container">
+        <input type="text" id="search-bar" placeholder="Потърсете резултата си с вашия имейл">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <p class="errorRes"></p>
+      </form>
+
+
+      <table>
+        <tr>
+          <th>Имена: </th>
+          <th>Имейл: </th>
+          <th>Брой верни точки: </th>
+          <th>Оценка: </th>
+          <th>Дата: </th>
+        </tr>
+
+      </table>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="backgroundModal">
+    <div class="modal">
+      <p class="congrats">Внимание!</p>
+      <p class="result">Сигурни ли сте че искате да предадете вашия изпит?</p>
+      <div class="btns">
+        <button>Предавам</button>
+        <button>Затвори</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+
+      // START OF LOGIC FOR SEARCH BAR
+
+      $('.search-icon').on('click', function (e) {
+
+        e.preventDefault();
+
+
+        let inputField = $('#search-bar').val();
+
+        let input = {
+          field: inputField
+        }
+
+
+        $.ajax({
+          method: "POST",
+          url: './ajax/searchBar.php',
+          data: JSON.stringify(input),
+          success: function (resp) {
+
+            let parsedRes = JSON.parse(resp);
+
+
+            if (parsedRes.status === 'emptyField') {
+
+              $('.trRole').remove();
+
+              $('table').append(` 
+              "<tr class='trRole'>";
+              "<td></td>";
+              "<td></td>";
+              "<td></td>";
+              "<td></td>";
+              "<td></td>";
+              "</tr>";`)
+
+
+            } else {
+
+
+
+              let email = parsedRes.email;
+              let names = parsedRes.names;
+              let result = parsedRes.result;
+              let resultPercentage = parsedRes.resultPercentage;
+              let timeStamp = parsedRes.timeStamp;
+
+              for (let i = 0; i < email.length && names.length && result.length && resultPercentage.length && timeStamp.length; i++) {
+
+                $('.trRole').remove();
+
+                $('table').append(` 
+              "<tr class='trRole'>";
+              "<td>${names[i]}</td>";
+              "<td>${email[i]}</td>";
+              "<td>${result[i]}</td>";
+              <td>${parseFloat(resultPercentage[i]).toFixed(2)}</td>
+              "<td>${timeStamp[i]}</td>";
+              "</tr>";`)
+
+
+
+              }
+
+            }
+
+
+          }
+
+        });
+
+      })
+
+      // END OF LOGIC FOR SEARCH BAR
+
+      // START OF LOGIC FOR SUBMITING THE FORM
+
+
+      // clean Modal//
+
+      $('.btns button:last-child').on('click', function () {
+
+        $('.backgroundModal').css('opacity', '0');
+        $('.backgroundModal').css('display', 'none');
+
+        $('.btns button:first-child').css('display', 'none');
+
+      });
+
+
+      let submitBTN = document.getElementById('submitBtn');
+      let result = 0;
+
+
+      disableInputs();
+
+      submitBtn.addEventListener('click', function (event) {
+
+
+        if ($('input[name]:checked').length < 10 && $('.inputs').filter(function () { return $(this).val() == ''; }).length > 0) {
+
+          $('.errorP').text('Всички полета са задължителни!')
+
+          setTimeout(function () {
+
+            $('.errorP').text('')
+
+          }, 5000)
+
+        } else if ($('input[name]:checked').length >= 10 && $('.inputs').filter(function () { return $(this).val() == ''; }).length == 0) {
+          event.preventDefault();
+
+          $('.backgroundModal').css('opacity', '1');
+          $('.backgroundModal').css('display', 'flex');
+
+
+          $('.btns button:first-child').on('click', function () {
+
+            $('.btns button:first-child').css('display', 'none');
+            $('.parag').css('display', 'block');
+
+
+            let allQuestions = document.querySelectorAll('input[type="radio"]');
+
+
+            allQuestions.forEach(function (question) {
+
+              if (question.checked && question.value === 'Вярно') {
+                result += 1;
+              }
+
+            });
+
+
+            localStorage.setItem('disableInputs', 'true');
+
+            disableInputs();
+
+            localStorage.getItem('disableInputs');
+
+            let grade;
+
+            if (result < 16) {
+              grade = 2.00;
+            } else if (result < 16 && result >= 18) {
+              grade = 3.00;
+            } else if (result <= 19 && result >= 20) {
+              grade = 3.50;
+            } else if (result === 21) {
+              grade = 4.50;
+            }
+            else if (result < 21 && result >= 23) {
+              grade = 5.00;
+            } else if (result === 24) {
+              grade = 5.50;
+            } else if (result >= 25) {
+              grade = 6.00;
+            }
+
+
+            let data = {
+
+              names: $('#names').val(),
+              email: $('#email').val(),
+              resPoints: result,
+              resFin: grade
+
+            }
+
+
+            $.ajax({
+              method: "POST",
+              url: './ajax/insertUser.php',
+              data: JSON.stringify(data),
+              contentType: "application/json",
+              success: function (response) {
+
+                console.log(response);
+
+                let parsedResponse = JSON.parse(response);
+
+                if (parsedResponse.status === "success") {
+                  $('.modal p:first-child').text('Вие успешно предадохте вашият изпит!')
+                  $('.result').text(`Имате ${result} точки от възможни 30. 
+                В случай че желаете да проверите теста си, верните отговори вече са качени под всеки въпрос и са в зелен цвят!`)
+
+                }
+
+              }
+
+
+            })
+
+          });
+
+
+        }
+
+
+      });
+
+
+
+      localStorage.clear()
+
+      function disableInputs() {
+        let inputs = document.querySelectorAll('input');
+        let searchInput = document.querySelector('#search-bar')
+
+        if (localStorage.getItem('disableInputs') === 'true') {
+
+          $('.parag').css('display', 'block');
+          let savedCheckedValue = localStorage.getItem('checkedOption');
+
+          $('input[name]:checked' === true);
+
+          inputs.forEach(input => {
+            input.setAttribute('disabled', 'disabled');
+
+            searchInput.removeAttribute('disabled');
+
+
+
+          });
+        }
+      }
+
+    });
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>

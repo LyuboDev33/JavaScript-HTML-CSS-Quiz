@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "PlovdivType";
+  src: url(/PlovdivTypeface-Fonts/OTF/PlovdivDisplay-Regular.otf);
+}
+
+* {
+  font-family: "PlovdivType", "sans-serif";
+  text-decoration: none;
+}
+
+.searchMail {
+  font-size: 20px;
+  margin: 15px auto;
+}
+
+.class {
+  width: 50%;
+    line-height: 2;
+}
+
+.backgroundContainer {
+  /* height: 100vh; */
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 25px auto;
+    flex-direction: column;
+    /* box-shadow: 1px 1px 4px #00000030; */
+    border-radius: 8px;
+    
+}
+
+table {
+  width: 120%;
+}
+
+tr td {
+  padding-top: 13px;
+    font-size: 16px;
+}
+
+
+.searchDiv {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px auto;
+}
+
+#postForm {
+  font-size: 18px;
+  padding: 22px;
+  border-radius: 8px;
+  height: auto;
+  background: white;
+  box-shadow: 1px 1px 4px black;
+}
+
+#postForm button {
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 3px 3px 0 black;
+  background: #0093ff;
+  color: white;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+#postForm button:hover { 
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#postForm button:not(:hover) {
+  transition: 0.5s;
+}
+
+#postForm button:active { 
+  padding: 2px;
+}
+
+input[type="radio"] {
+  box-sizing: border-box;
+    margin: 11px;
+    width: 24px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(35%);
+    cursor: pointer;
+}
+
+
+
+input[type="radio"]:not(:hover) {
+transition: 0.5s;
+}
+
+
+.parag {
+  color: green;
+  text-decoration: underline;
+  display: none;
+}
+
+
+.backgroundModal { 
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0000006e;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  display: none;
+}
+
+.modal {
+  text-align: center;
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.btns button:first-child { 
+  padding: 4px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  background: #0093ff;
+  box-shadow: 3px 3px 0 #000000e0;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btns button:first-child:hover { 
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.btns button:first-child:not(:hover) { 
+  transition: 0.5s;
+}
+
+
+.btns button:last-child { 
+  padding: 4px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  background: red;
+  box-shadow: 3px 3px 0 #000000e0;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+.btns button:last-child:hover { 
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.btns button:last-child:not(:hover) { 
+  transition: 0.5s;
+}
+
+.modal p {
+  width: 80%;
+  margin: 20px auto;
+  font-size: 24px;
+}
+
+.inputs {
+  border: none;
+  box-shadow: 1px 1px 4px #0000005e;
+  padding: 10px;
+  font-size: 20px;
+  width: 25%;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+
+/* CSS */
+
+.search-container{
+  width: 490px;
+  display: block;
+  margin: 0 auto;
+}
+
+input#search-bar{
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: black;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -30px;
+  right: -45px;
+}
+
+.errorRes {
+  color: red;
+}
